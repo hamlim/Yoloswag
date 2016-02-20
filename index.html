@@ -8,20 +8,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="./assets/css/normalize.min.css">
+        <link rel="stylesheet" href="./assets/dist/normalize.min.css">
         <link rel="stylesheet" href="./bower_components/skeleton/css/skeleton.css" />
-        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./bower_components/emojione/assets/css/emojione-awesome.css" />
+        <link rel="stylesheet" href="./bower_components/ionicons/css/ionicons.css" />
+        <link rel="stylesheet" href="./bower_components/hint.css/hint.min.css" />
+        <link rel="stylesheet" href="./assets/dist/main.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
         <![endif]-->
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
+        <header class="header bg__light-blue">
+            <nav class="header__nav utils__center">
+                <h1 class="header__title"><span class="emoji">:hash:</span><span class="hint--top hint--success" data-hint="Were &nbsp; back &nbsp; baby!!">YOLOSWAG</span><span class="emoji">:zap:</span></h1>
+            </nav>
+            <div class="header__subnav utils__center bg__dark-blue">
+                <span class="header__subtitle"><a href="./music" class="header__link-nolink">Music</a> | <a href="./videos" class="header__link-nolink">Videos</a></span>
+            </div>
+        </header>
+        <main class="main">
+
+        </main>
+        <footer class="footer">
+
+        </footer>
 
 
-
-        <script src="js/main.js"></script>
+        <script src="./bower_components/emojione/lib/js/emojione.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script type="text/javascript">
+            $(".emoji").each(function() {
+                var original = $(this).html();
+                // use .shortnameToImage if only converting shortnames (for slightly better performance)
+                var converted = emojione.toImage(original);
+                $(this).html(converted);
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -32,5 +58,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
+
     </body>
 </html>
