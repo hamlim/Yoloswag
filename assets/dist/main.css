@@ -101,6 +101,11 @@ textarea {
   .utils__nolink:hover-emoji:hover {
     border-bottom: 0px; }
 
+.utils__center-image {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
 .emoji {
   display: none; }
 
