@@ -6,9 +6,9 @@ $(document).ready(function(){
         if (response.status >= 200 && response.status < 300) {
             return response;
         } else {
-            var error = new Error(response.statusText)
-            error.response = response
-            throw error
+            var error = new Error(response.statusText);
+            error.response = response;
+            throw error;
         }
     }
 
@@ -27,10 +27,14 @@ $(document).ready(function(){
     .then(function(response){
         console.log(response);
         //lets get that data
+        var arr = [];
         for(var i=0; i<response.records.length; i++){
             console.log("For Loop");
-            var object = response.records[i];
-            console.log(object);
+            arr.push(response.records[i]);
+        }
+        arr.sort(function(a,b) { return parseFloat(a.fields.song_id) - parseFloat(b.fields.song_id) } );
+        for(var i = 0; i<arr.length; i++){
+            var object = arr[i];
             console.log(object.fields.song_title);
             if(object.fields.song_title !== undefined){
                 console.log("For Loop conditional");

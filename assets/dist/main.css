@@ -69,6 +69,10 @@ textarea {
 .section__header {
   border-bottom: 2px dashed #DDD; }
 
+.main {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 .bg__orange {
   background-color: #F78536; }
 
