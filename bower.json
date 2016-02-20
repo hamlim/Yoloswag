@@ -1,0 +1,33 @@
+{
+  "name": "Yoloswag",
+  "homepage": "https://github.com/hamlim/Yoloswag",
+  "authors": [
+    "hamlim <hamlim@rpi.edu>"
+  ],
+  "description": "A Media Site",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "YOLOSWAG"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "Skeleton-Sass": "skeleton-scss#*",
+    "skeleton": "^2.0.4",
+    "font-awesome": "fontawesome#^4.5.0",
+    "hint.css": "^2.1.0",
+    "es6-promise": "^3.1.2",
+    "fetch": "^0.11.0",
+    "Ionicons": "ionicons#^2.0.1",
+    "howler.js": "^1.1.29"
+  }
+}
