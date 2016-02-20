@@ -15,7 +15,6 @@ $(document).ready(function(){
     function parseJSON(response) {
         return response.json();
     }
-    // <div class='row'><div class='one column track__number'><span id='track__number'></span></div><div class='three columns track__name'><span id='track__name'></span></div><div class='two columns track__album'><span id='track__album'></span></div><div class='six columns track__audio'><audio id='track__audio'></audio></div></div>
     fetch('https://api.airtable.com/v0/app35atgWtDtBboot/music', {
         'method': 'GET',
         'headers': {
