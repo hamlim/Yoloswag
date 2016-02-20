@@ -66,6 +66,9 @@ textarea {
   text-decoration: none;
   color: #FF165D; }
 
+.section__header {
+  border-bottom: 2px dashed #DDD; }
+
 .bg__orange {
   background-color: #F78536; }
 
@@ -94,9 +97,15 @@ textarea {
   .utils__nolink:hover-emoji:hover {
     border-bottom: 0px; }
 
+.emoji {
+  display: none; }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (min-width: 35em) {
+  .emoji {
+    display: inline-block; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

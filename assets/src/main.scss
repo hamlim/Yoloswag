@@ -95,7 +95,9 @@ $pink: #FF165D;
     color: $pink;
 }
 
-
+.section__header {
+    border-bottom: 2px dashed #DDD;
+}
 
 .bg__orange {
     background-color: $orange;
@@ -131,7 +133,9 @@ $pink: #FF165D;
     }
 }
 
-
+.emoji {
+    display: none;
+}
 
 
 
@@ -148,7 +152,9 @@ $pink: #FF165D;
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
+    .emoji {
+        display: inline-block;;
+    }
 }
 
 @media print,
