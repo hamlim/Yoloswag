@@ -78,8 +78,21 @@ textarea {
 .bg__dark-blue {
   background-color: #2B4450; }
 
+.bg__blue {
+  background-color: #3EC1D3; }
+
 .utils__center {
   text-align: center; }
+
+.utils__nolink {
+  text-decoration: none;
+  color: #AAA; }
+
+.utils__nolink:hover {
+  color: #DDD;
+  border-bottom: solid 2px #FF165D; }
+  .utils__nolink:hover-emoji:hover {
+    border-bottom: 0px; }
 
 /* ==========================================================================
    Media Queries

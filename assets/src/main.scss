@@ -109,11 +109,26 @@ $pink: #FF165D;
 .bg__dark-blue {
     background-color: $dark-blue;
 }
+.bg__blue {
+    background-color: $blue;
+}
 
 // Utility Classes
 
 .utils__center {
     text-align: center;
+}
+.utils__nolink {
+    text-decoration: none;
+    color: #AAA;
+}
+.utils__nolink:hover {
+    color: #DDD;
+    border-bottom: solid 2px $pink;
+
+    &-emoji:hover {
+        border-bottom: 0px;
+    }
 }
 
 
