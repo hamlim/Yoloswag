@@ -29,7 +29,7 @@ $(document).ready(function(){
         var arr = [];
         for(var i=0; i<response.records.length; i++){
             console.log("For Loop");
-            if(response.records[i].fields.playlist_id === 1){
+            if(response.records[i].fields.playlist_id === 2){
                 arr.push(response.records[i]);
             }
         }
